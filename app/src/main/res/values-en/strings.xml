@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Users Register</string>
+    <string name="titulo">Complete the form for your registration</string>
+    <string name="nombre_hint">Name</string>
+    <string name="correo_hint">E-mail</string>
+    <string name="telefono_hint">Phone number</string>
+    <string name="passw_hint">Password</string>
+    <string name="rep_passw_hint">Repeat password</string>
+    <string name="masculino">Male</string>
+    <string name="femenino">Female</string>
+    <string name="genero">Genre</string>
+    <string name="respuesta">REGISTATION COMPLETED! \nName: %s \nE-mail: %s \nPhone number: %s \nPassword: %s \nGenre: %s \nHobbies: %s \nDAte of birth: %s \nCity of birth: %s</string>
+    <string name="nacimiento">Select date of birth</string>
+    <string name="registrar_button">REGISTER</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="nadar">Swim</string>
+    <string name="deportes">Sports</string>
+    <string name="cine">Cinema</string>
+    <string name="comer">Eat</string>
+    <string name="nacimiento_text">Date of birth</string>
+    <string name="estudiar">Study</string>
+    <string name="musica">Music</string>
+    <string name="ciudad_textview">City of birth</string>
+
+    <string-array name="ciudades">
+        <item>Seleccione ciudad</item>
+        <item>Medellin</item>
+        <item>Bogota</item>
+        <item>Barranquilla</item>
+        <item>Bucaramanga</item>
+    </string-array>
+</resources>

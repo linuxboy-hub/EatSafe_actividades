@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Registro de Usuarios</string>
+    <string name="titulo">Complete el formulario para su registro</string>
+    <string name="nombre_hint">Nombre</string>
+    <string name="correo_hint">Correo</string>
+    <string name="telefono_hint">Telefono</string>
+    <string name="passw_hint">Password</string>
+    <string name="rep_passw_hint">Repetir password</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="genero">Género</string>
+    <string name="respuesta">REGISTRO COMPLETADO! \nNombre: %s \nCorreo: %s \nTelefono: %s \nPassword: %s \nGénero: %s \nHobbies: %s \nFecha de nacimiento: %s \nCiudad de nacimiento: %s</string>
+    <string name="nacimiento">Seleccione fecha de nacimiento</string>
+    <string name="registrar_button">REGISTRAR</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="nadar">Nadar</string>
+    <string name="deportes">Deportes</string>
+    <string name="cine">Ir al cine</string>
+    <string name="comer">Comer</string>
+    <string name="nacimiento_text">Fecha de nacimiento</string>
+    <string name="estudiar">Estudiar</string>
+    <string name="musica">Música</string>
+    <string name="ciudad_textview">Ciudad de nacimiento</string>
+
+    <string-array name="ciudades">
+        <item>Seleccione ciudad</item>
+        <item>Medellin</item>
+        <item>Bogota</item>
+        <item>Barranquilla</item>
+        <item>Bucaramanga</item>
+    </string-array>
+</resources>
