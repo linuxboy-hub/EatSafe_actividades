@@ -1,32 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Users Register</string>
-    <string name="titulo">Complete the form for your registration</string>
+    <string name="app_name">Eat Safe</string>
+    <string name="titulo">Users register</string>
     <string name="nombre_hint">Name</string>
-    <string name="correo_hint">E-mail</string>
+    <string name="correo_hint">Email</string>
     <string name="telefono_hint">Phone number</string>
     <string name="passw_hint">Password</string>
     <string name="rep_passw_hint">Repeat password</string>
-    <string name="masculino">Male</string>
-    <string name="femenino">Female</string>
-    <string name="genero">Genre</string>
-    <string name="respuesta">REGISTATION COMPLETED! \nName: %s \nE-mail: %s \nPhone number: %s \nPassword: %s \nGenre: %s \nHobbies: %s \nDAte of birth: %s \nCity of birth: %s</string>
-    <string name="nacimiento">Select date of birth</string>
-    <string name="registrar_button">REGISTER</string>
-    <string name="hobbies">Hobbies</string>
-    <string name="nadar">Swim</string>
-    <string name="deportes">Sports</string>
-    <string name="cine">Cinema</string>
-    <string name="comer">Eat</string>
-    <string name="nacimiento_text">Date of birth</string>
-    <string name="estudiar">Study</string>
-    <string name="musica">Music</string>
-    <string name="ciudad_textview">City of birth</string>
+    <string name="nacimiento">Select your birthdate</string>
+    <string name="registrar_button">Sign up</string>
+    <string name="nacimiento_text">Birthdate</string>
+    <string name="registrar_login">Sign up</string>
+    <string name="login_textview">Log in</string>
+    <string name="mail_hint">Mail</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Log in</string>
+    <string name="login_content">login image</string>
+    <string name="cerrrar_sesion">Log out</string>
+    <string name="eatsafe">Eat Safe</string>
+
+
+    <string name="nombre_vacio">Enter your name!</string>
+    <string name="telefono_vacio">Enter your phone number!</string>
+    <string name="mail_vacio">Enter your email!</string>
+    <string name="password_vacio">Enter your password!</string>
+    <string name="repassword_vacio">Repeat your password!</string>
+    <string name="min_password">Your password must be at least 6 digits long!</string>
+    <string name="nomatch_password">Passwords do not match!</string>
+    <string name="fecha_vacio">Enter your birthdate!</string>
+    <string name="exitoso">Successful registration!</string>
+    <string name="bienvenido">WELCOME!</string>
+    <string name="incorrecta">Incorrect password!</string>
+    <string name="noexiste">User does not exist!</string>
+    <string name="main">Email with which you started session: %s</string>
+
 
     <string-array name="ciudades">
-        <item>Seleccione ciudad</item>
-        <item>Medellin</item>
-        <item>Bogota</item>
+        <item>Select a city</item>
+        <item>Medellín</item>
+        <item>Bogotá</item>
         <item>Barranquilla</item>
         <item>Bucaramanga</item>
     </string-array>

@@ -1,25 +1,29 @@
-package com.linuxboy.registrousuario
+package com.linuxboy.eatsafe_actividades.ui.registro
 
 import android.app.DatePickerDialog
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.linuxboy.eatsafe_actividades.R
+import com.linuxboy.eatsafe_actividades.ui.login.LoginActivity
+import kotlinx.android.synthetic.main.activity_registro.*
 import java.text.SimpleDateFormat
 import java.util.*
 
 private var fechaNacimiento: String = ""
 private var cal = Calendar.getInstance()
 
-class MainActivity : AppCompatActivity() {
-
+class RegistroActivity : AppCompatActivity() {
+/*
     companion object{
         private const val EMPTY = ""
         private const val SPACE = " "
-    }
+    }*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_registro)
 
         val dateSetListener =
             DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
@@ -50,60 +54,51 @@ class MainActivity : AppCompatActivity() {
             val telefono = telefono_edit_text.text.toString()
             val password = password_edit_text.text.toString()
             val repassword = rep_passw_edit_text.text.toString()
-            val genero = if (masculino_radio_button.isChecked) "Masculino" else "Femenino"
-            var hobbies = EMPTY
-            if (cine_checkbox.isChecked) hobbies += getString(R.string.cine) + SPACE
-            if (deportes_checkbox.isChecked) hobbies += getString(R.string.deportes) + SPACE
-            if (estudiar_checkbox.isChecked) hobbies += getString(R.string.estudiar) + SPACE
-            if (comer_checkbox.isChecked) hobbies += getString(R.string.comer) + SPACE
-            if (nadar_checkbox.isChecked) hobbies += getString(R.string.nadar) + SPACE
-            if (musica_checkbox.isChecked) hobbies += getString(R.string.musica)
-
             val nacimiento = fechaNacimiento
-            val ciudad = ciudad_spinner.selectedItem.toString()
 
 
             if (nombre.isEmpty()) {
-                respuesta_text_view.text = "Ingrese el NOMBRE!"
+                //Toast.makeText(this, "Ingrese el NOMBRE!",  Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.nombre_vacio), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-
             if (correo.isEmpty()) {
-                respuesta_text_view.text = "Ingrese el CORREO!"
+                Toast.makeText(this, getString(R.string.mail_vacio), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-
             if (telefono.isEmpty()) {
-                respuesta_text_view.text = "Ingrese el TELEFONO!"
+                Toast.makeText(this, getString(R.string.telefono_vacio), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
             if (password.isEmpty()) {
-                respuesta_text_view.text = "Ingrese PASSWORD!"
+                Toast.makeText(this, getString(R.string.password_vacio), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-
             if (repassword.isEmpty()) {
-                respuesta_text_view.text = "Repita PASSWORD!"
+                Toast.makeText(this, getString(R.string.repassword_vacio), Toast.LENGTH_SHORT)
+                    .show()
                 return@setOnClickListener
             }
-
             if (nacimiento.isEmpty()) {
-                respuesta_text_view.text = "Ingrese FECHA DE NACIMIENTO!"
+                Toast.makeText(this, getString(R.string.fecha_vacio), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-
-            if (ciudad == "Seleccione ciudad") {
-                respuesta_text_view.text = "Ingrese CIUDAD DE NACIMIENTO!"
+            if (password.length < 6) {
+                Toast.makeText(this, getString(R.string.min_password), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-
             if (password != repassword) {
-                respuesta_text_view.text = "PASSWORDS NO COINCIDEN!"
+                Toast.makeText(this, getString(R.string.nomatch_password), Toast.LENGTH_SHORT)
+                    .show()
                 return@setOnClickListener
             }
 
-
-            respuesta_text_view.text = getString(R.string.respuesta, nombre, correo, telefono, password, genero, hobbies, fechaNacimiento, ciudad)
+            val intent = Intent(this, LoginActivity::class.java)
+            intent.putExtra("correo", correo)
+            intent.putExtra("password", password)
+            Toast.makeText(this, getString(R.string.exitoso), Toast.LENGTH_SHORT).show()
+            startActivity(intent)
+            finish()
 
         }
 
