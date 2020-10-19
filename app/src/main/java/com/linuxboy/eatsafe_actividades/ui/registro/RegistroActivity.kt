@@ -62,6 +62,7 @@ class RegistroActivity : AppCompatActivity() {
                 Toast.makeText(this, getString(R.string.nombre_vacio), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+
             if (correo.isEmpty()) {
                 Toast.makeText(this, getString(R.string.mail_vacio), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
@@ -74,11 +75,13 @@ class RegistroActivity : AppCompatActivity() {
                 Toast.makeText(this, getString(R.string.password_vacio), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+
             if (repassword.isEmpty()) {
                 Toast.makeText(this, getString(R.string.repassword_vacio), Toast.LENGTH_SHORT)
                     .show()
                 return@setOnClickListener
             }
+
             if (nacimiento.isEmpty()) {
                 Toast.makeText(this, getString(R.string.fecha_vacio), Toast.LENGTH_SHORT).show()
                 return@setOnClickListener

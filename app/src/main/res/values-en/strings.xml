@@ -42,4 +42,36 @@
         <item>Barranquilla</item>
         <item>Bucaramanga</item>
     </string-array>
+
+    <string name="escanear">Escanear</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="menu">Menu</string>
+    <string name="mas">Más</string>
+
+    <string name="escanear_descripcion">Escanear\nEn este fragmento se accederá a la cámara del celular con el objetivo de escanear el código QR identificador de cada restaurante, aquí también se mostrará la información básica del restaurante para que el usuario compruebe su identidad</string>
+    <string name="menu_descripcion">Menú\nAquí se mostrará la carta del restaurante, este fragmento estará acompañado de un TabbedActivity que mostrará al usuario las diferentes categorías de productos que se venden en el restaurante, dando la opción de indicar cuales quiere pedir</string>
+    <string name="confirmar_descripcion">Confirmar\nEn esta vista se le mostrará al usuario un resumen de los productos pedidos u orden con el fin de que verifique si es correcta; si le falta algo más por pedir o si hay algún producto que no pidió, también se le dará la opción de dar indicaciones o detalles específicos sobre cómo quiere que se le prepare un determinado producto</string>
+    <string name="mas_descripcion">Más\nEn esta sección se le mostrará al usuario opciones como cerrar sesión, modificar datos de usuario tales como contraseña, correo y fecha de nacimiento; también se le mostrará detalles técnicos de la aplicación, versión, políticas de servicio, etc.</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="title_activity_bottom">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+
 </resources>

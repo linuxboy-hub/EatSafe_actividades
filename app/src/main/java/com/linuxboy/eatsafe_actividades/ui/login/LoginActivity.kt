@@ -1,11 +1,12 @@
 package com.linuxboy.eatsafe_actividades.ui.login
 
 import android.content.Intent
+import android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.linuxboy.eatsafe_actividades.R
-import com.linuxboy.eatsafe_actividades.ui.main.MainActivity
+import com.linuxboy.eatsafe_actividades.ui.bottom.BottomActivity
 import com.linuxboy.eatsafe_actividades.ui.registro.RegistroActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -35,11 +36,13 @@ class LoginActivity : AppCompatActivity() {
 
             if (correologin == mail) {
                 if (pass == contra) {
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, BottomActivity::class.java)
                     intent.putExtra("correo", correologin)
                     intent.putExtra("password", pass)
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK or FLAG_ACTIVITY_CLEAR_TASK)
                     startActivity(intent)
-                    finish()
+
+
                 } else {
                     Toast.makeText(this, getString(R.string.incorrecta), Toast.LENGTH_SHORT).show()
                     return@setOnClickListener

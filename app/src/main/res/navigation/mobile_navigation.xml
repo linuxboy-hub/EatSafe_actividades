@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_escanear">
+
+    <fragment
+        android:id="@+id/nav_menu"
+        android:name="com.linuxboy.eatsafe_actividades.ui.comidas.MenuFragment"
+        android:label="@string/menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/nav_confirmar"
+        android:name="com.linuxboy.eatsafe_actividades.ui.confirmar.ConfirmarFragment"
+        android:label="@string/confirmar"
+        tools:layout="@layout/fragment_confirmar" />
+    <fragment
+        android:id="@+id/nav_escanear"
+        android:name="com.linuxboy.eatsafe_actividades.ui.escanear.EscanearFragment"
+        android:label="@string/escanear"
+        tools:layout="@layout/fragment_escanear" />
+    <fragment
+        android:id="@+id/nav_mas"
+        android:name="com.linuxboy.eatsafe_actividades.ui.mas.MasFragment"
+        android:label="@string/mas"
+        tools:layout="@layout/fragment_mas" />
+</navigation>
